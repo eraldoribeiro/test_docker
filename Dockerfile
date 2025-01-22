@@ -5,5 +5,5 @@ FROM eribeirofit/cse4001:latest
 COPY entrypoint.sh /root/os161/root/entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/root/os161/root/entrypoint.sh"]
 
