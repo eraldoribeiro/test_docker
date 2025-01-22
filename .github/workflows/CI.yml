@@ -16,4 +16,6 @@ jobs:
       options: --cpus 1
     steps:
       - name: Check for dockerenv file
-        run: ls -l && (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
+        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
+      - name: List files in /root/os161/root/
+        run: (cd /root/os161/root) && (ls -l)
