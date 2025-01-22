@@ -10,7 +10,7 @@ jobs:
 
         # Activate unity
         - name: test run command
-          run: cd /root/os161/root/ && sys161 kernel q 
+          run: cd /root/os161/root/ && /root/os161/tools/bin/sys161 kernel q 
           
           
 
