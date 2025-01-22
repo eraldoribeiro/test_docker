@@ -4,8 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: eribeirofit/cse4001:latest
-    outputs:
-      HELLO: "${{ steps.run-os161.outputs.HELLO }}"
     steps:
         - name: Checkout Project
           uses: actions/checkout@v1
@@ -14,7 +12,5 @@ jobs:
         - name: test run command
           id: run-os161
           run: cd /root/os161/root/ && /root/os161/tools/bin/sys161 kernel q 
-          
-        - name: one-2
-          run: echo "${{steps.run-os161.outputs.HELLO}}"  
+
 
