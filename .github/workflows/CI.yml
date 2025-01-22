@@ -6,7 +6,7 @@ jobs:
   container-test-job:
     runs-on: ubuntu-latest
     container:
-      image: node:18
+      image: eribeirofit/cse4001:latest
       env:
         NODE_ENV: development
       ports:
