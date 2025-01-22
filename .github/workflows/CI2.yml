@@ -1,0 +1,15 @@
+name: CI2
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: eribeirofit/cse4001:latest
+    steps:
+        - name: Checkout Project
+          uses: actions/checkout@v1
+
+        # Activate unity
+        - name: test run command
+          run: bash /root/os161/root/sys161 kernel q
+          
+
