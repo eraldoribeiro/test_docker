@@ -2,7 +2,7 @@
 
 
 cd /root/os161/src
-ls
+ls -l /github/workspace
 
 # Build OS/161 (Kernel-level)
 cd kern/conf
