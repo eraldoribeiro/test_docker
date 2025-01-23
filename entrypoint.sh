@@ -15,7 +15,9 @@ cd ../compile/DUMBVM
 # Build OS/161 (Userland)
 cd /github/workspace
 /root/os161/tools/bin/bmake includes
+cd /github/workspace
 /root/os161/tools/bin/bmake
+cd /github/workspace
 /root/os161/tools/bin/bmake install
 
 # Run the OS/161 kernel and save the output to a file
