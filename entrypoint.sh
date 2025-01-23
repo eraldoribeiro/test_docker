@@ -4,15 +4,15 @@
 cd kern/conf
 ./config DUMBVM
 cd ../compile/DUMBVM
-bmake depend
-bmake
-bmake install
+/root/os161/tools/bin/bmake depend
+/root/os161/tools/bin/bmake
+/root/os161/tools/bin/bmake install
 
 # Build OS/161 (Userland)
 cd ~
-bmake includes
-bmake
-bmake install
+/root/os161/tools/bin/bmake includes
+/root/os161/tools/bin/bmake
+/root/os161/tools/bin/bmake install
 
 # Run the OS/161 kernel and save the output to a file
 cd /root/os161/root/
