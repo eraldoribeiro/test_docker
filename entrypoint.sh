@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 
-cd /root/os161/workspace
+cd /root/os161/src
 ls
 
 # Build OS/161 (Kernel-level)
