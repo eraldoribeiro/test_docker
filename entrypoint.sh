@@ -3,13 +3,16 @@
 
 ls ~/
 cd /github/workspace
+echo $PATH
 
 # Build OS/161 (Kernel-level)
 cd kern/conf
 ./config DUMBVM
 cd ../compile/DUMBVM
 /root/os161/tools/bin/bmake depend
+cd /github/workspace
 /root/os161/tools/bin/bmake
+cd /github/workspace
 /root/os161/tools/bin/bmake install
 
 # Build OS/161 (Userland)
