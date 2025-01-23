@@ -1,7 +1,8 @@
 #!/bin/sh -l
 
 
-
+cd /root/os161/workspace
+ls
 
 # Build OS/161 (Kernel-level)
 cd kern/conf
