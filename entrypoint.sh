@@ -1,5 +1,8 @@
 #!/bin/sh -l
 
+
+
+
 # Build OS/161 (Kernel-level)
 cd kern/conf
 ./config DUMBVM
