@@ -1,8 +1,8 @@
 #!/bin/sh -l
 
 
-cd /root/os161/src
-ls -l /github/workspace
+ls ~/
+cd /github/workspace
 
 # Build OS/161 (Kernel-level)
 cd kern/conf
@@ -13,7 +13,7 @@ cd ../compile/DUMBVM
 /root/os161/tools/bin/bmake install
 
 # Build OS/161 (Userland)
-cd ~
+cd /github/workspace
 /root/os161/tools/bin/bmake includes
 /root/os161/tools/bin/bmake
 /root/os161/tools/bin/bmake install
